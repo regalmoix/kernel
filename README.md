@@ -10,8 +10,11 @@ This is an alternative to the traditional VM method if you have lost all hopes (
 Here I list  the commands for Ubuntu based distros. You might want to find their equivalents for your particular distribution.
 
 ```sudo apt install git```
+
 ```sudo apt install  libncurses5-dev libssl-dev ccache flex bison libelf-dev```
+
 ```sudo apt install build-essential fakeroot```
+
 ```sudo apt install qemu qemu-system```
 
 I have listed all necessary packages to the best of my knowledge, in case something is missing (or extra) use your own discretion to make amends.
