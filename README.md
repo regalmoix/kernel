@@ -63,11 +63,15 @@ Select “Target Options” to run it on x86_64 virtualized system with qemu.
 
 Target Options -> Target Architecture →
 ![Image for post](https://miro.medium.com/max/890/1*CgEoS6ERti9BlViTWZ8qzg.png)
+
 Filesystem images → ext2/3/4 root file system
 
 Choose **ext4** file system to be mounted as default file system for the system.
 
+
 ![Image for post](https://miro.medium.com/max/889/1*da0W8WeGWKeIbK4JDVIY9w.png)
+
+
 After selecting the required above-mentioned settings, Save and Exit from the dialog. You should return to your terminal screen with a message confirming that the config has been saved 
 
 Build ‘buildroot’ project with ‘make' and take a nap as the building process is said to take a long time.(How much, idk because I took a nap myself).  Just wait for 15 mins to check that no error occurred though. 
@@ -84,14 +88,18 @@ The rootfs.ext4 has been created, so you can use the generated image could be us
 ## Fun Stuff : Testing the kernel
 
 Hopefully if your kernel compiled perfectly and the rootfs.ext4 was generated, you can proceed to actually test your system. 
+
 The kernel image should be in ```~/Downloads/linux-5.8.10/arch/x86/boot``` with file name ```bzImage```
+
 The rootfs.ext4 should be in  ```~/buildroot/output/images/``` with name ```rootfs.ext4```
 
 If not, verify your commands ran correctly, or double check the locations of these files. There is no harm with these files being in different directories but you might need to modify the below command appropriately.
 
 I recommend saving this below command as a bash alias/*executable* script (Google how.)
 
+
 ```qemu-system-x86_64 -kernel ~/Downloads/linux-5.8.10/arch/x86/boot/bzImage -boot c -m 2049M -hda ~/buildroot/output/images/rootfs.ext4 -append "root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr" -serial stdio -display none```
+
 
 Buildroot has ‘root’ as default login user without password. Just put `root` after `buildroot login:` then you will get the shell. Only the very basic commands shall work in this shell. 
 
