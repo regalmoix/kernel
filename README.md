@@ -169,7 +169,9 @@ Consider this to be the better guide than mine. Please let me know if I made any
 
 ## Author
 Nachiket Agrawal, 2018A7PS0235G
+
 Only contact if you fail miserably / or I made a mistake somewhere. 
+
 I expect you to send relevant outputs.
  
 
