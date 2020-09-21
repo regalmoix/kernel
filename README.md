@@ -31,7 +31,7 @@ Unless otherwise specified, execute all the following commands as non-root user.
 
 
 ## Compiling the kernel
->Change the pwd to the path to kernel source
+>Change the working directory to the path to kernel source
 >
 	    cd ~/Downloads/linux-5.8.10/
 
@@ -170,7 +170,7 @@ Consider this to be the better guide than mine. Please let me know if I made any
 ## Author
 Nachiket Agrawal, 2018A7PS0235G
 
-Only contact if you fail miserably / or I made a mistake somewhere. 
+Only contact if you fail miserably or I made a mistake somewhere. 
 
 I expect you to send relevant outputs.
  
