@@ -128,10 +128,13 @@ I recommend you save the following commands as bash scripts. These are used to m
 If you are unable to mount on ```/mnt``` you can make a new directory anywhere and substitute it.
 
 Change directory to the home directory of the user we created.
+
 ```cd /mnt/home/test```
 
 Make a test C file helloworld.c
+
 ```sudo touch helloworld.c```
+
 ```sudo nano helloworld.c``` 
 
 ...and write the test code as you please. 
@@ -140,9 +143,11 @@ Where is the compiler you ask? Is it not simply gcc?
 Well yes, but actually no. Since we are compiling for the target system, we need to use a cross compiler. It should be in  ```~/buildroot/output/host/bin/```
 
 You can run this to check if gcc works
+
 ```~/buildroot/output/host/bin/x86_64-buildroot-linux-uclibc-gcc --version```
 
 Use  this to compile your above made C file.
+
 ```sudo ~/buildroot/output/host/bin/x86_64-buildroot-linux-uclibc-gcc helloworld.c```
 
 You would see a  ```a.out``` file in /mnt/home/test
