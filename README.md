@@ -108,6 +108,9 @@ Buildroot has ‘root’ as default login user without password. Just put `root`
 
 Since you are currently logged in as root, you might want to create a non-root user. You could change username and home directory ```test``` to whatever you want. However I will assume it to be ```test``` for the tutorial.
 
+```mkdir /home```
+```mkdir /home/test```
+
 ```adduser test -h /home/test ```
 
 Set password and then, 
@@ -153,6 +156,11 @@ Use  this to compile your above made C file.
 You would see a  ```a.out``` file in /mnt/home/test
 
 Now you can again start the kernel using qemu command we used above (which you hopefully aliased) and login with the test user.
+But first unmount the mounted rootfs from /mnt using
+```sudo umount /mnt```
+And then run the above mentioned ```qemu``` command.
+
+
 You can run the ```a.out``` file in the home directory
 
 Similarly whenever you make changes to the kernel and recompile it on your host system, you can write and compile driver codes to test that the changes you made work
