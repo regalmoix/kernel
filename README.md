@@ -175,18 +175,19 @@ Similarly whenever you make changes to the kernel and recompile it on your host 
 ## Donation
 
 My BTC Address is ... nah kidding.
-Duao me yaad rakhna
+
 
 ## Sources
 https://medium.com/@daeseok.youn/prepare-the-environment-for-developing-linux-kernel-with-qemu-c55e37ba8ade
 Consider this to be the better guide than mine. Please let me know if I made any silly mistake in this guide.
+Some parts of this guide have directly been pasted here since there was no better explanation, so special thanks to the author.
 
 ## Author
 Nachiket Agrawal, 2018A7PS0235G
 
-Only contact if you fail miserably or I made a mistake somewhere. 
+Please let me know if I made a mistake somewhere. 
 
-I expect you to send relevant outputs.
+
  
 
 
